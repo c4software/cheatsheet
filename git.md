@@ -67,7 +67,6 @@ Modifier le commit précédent :
 $ git commit --amend
 ```
 
-
 ### Historique de Commit
 
 Afficher tous les commits :
@@ -171,6 +170,11 @@ $ git remote show origin
 Ajouter un nouveau dépôt distant, nommé &lt;remote&gt; :
 ```
 $ git remote add <remote> <url>
+```
+
+Synchronise la branche « origin » avec la master. Et indique origin comme dépôt distant par défaut.
+```
+$ git push -u origin master
 ```
 
 Télécharger toutes les modifications d'un dépôt distant nommé &lt;remote&gt;, sans les fusionner :
