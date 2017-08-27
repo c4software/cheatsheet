@@ -5,7 +5,7 @@
 Définir son identité :
 ```
 $ git config --global user.email "email@example.com"
-$ git config --global user.name "John Doe"
+$ git config --global user.name "Valentin Brosseau"
 ```
 
 Voir la configuration :
