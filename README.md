@@ -2,6 +2,6 @@
 
 Aide mémoire en Français pour différents outils
 
-* [Git](git/git.md)
+* [Git](git/README.md)
 * [Docker](docker.md)
-* [Cordova](cordova/cordova.md)
+* [Cordova](cordova/README.md)
