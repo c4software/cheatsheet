@@ -4,4 +4,4 @@ Aide mémoire en Français pour différents outils
 
 * [Git](git/git.md)
 * [Docker](docker.md)
-* [Cordova](cordova.md)
+* [Cordova](cordova/cordova.md)
