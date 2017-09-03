@@ -42,7 +42,7 @@ Modifications sur les fichiers suivis :
 $ git diff
 ```
 
-Ajouter tous les changements actuelles au prochain commit :
+Ajouter tous les changements actuels au prochain commit :
 ```
 $ git add
 ```
@@ -84,12 +84,12 @@ Afficher l’historique d’un utilisateur uniquement :
 $ git log --author="utilisateur"
 ```
 
-Afficher l'historiques des modifications pour un fichier uniquement :
+Afficher l’historique des modifications pour un fichier uniquement :
 ```
 $ git log -p <fichier>
 ```
 
-Affiche les changement (en détails) dans le fichier :
+Affiche les changements (en détails) dans le fichier :
 ```
 $ git blame <file>
 ```
@@ -121,7 +121,7 @@ Supprimer une branche :
 $ git branch -d <votre-branche>
 ```
 
-Marqué le commit courant avec un tag :
+Marquer le commit courant avec un tag :
 ```
 $ git tag <non-du-tag>
 ```
@@ -157,7 +157,7 @@ $ git rebase --continue
 
 ### Travailler avec un dépots distant
 
-Lister tout les dépôts distants configurés :
+Lister tous les dépôts distants configurés :
 ```
 $ git remote -v
 ```
@@ -172,7 +172,7 @@ Ajouter un nouveau dépôt distant, nommé &lt;remote&gt; :
 $ git remote add <remote> <url>
 ```
 
-Synchronise la branche « origin » avec la master. Et indique origin comme dépôt distant par défaut.
+Synchroniser la branche « origin » avec la master. Et indiquer origin comme le dépôt distant par défaut.
 ```
 $ git push -u origin master
 ```
