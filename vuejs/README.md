@@ -53,4 +53,22 @@ var app = new Vue({
 * beforeDestroy
 * detroyed
 
-![Les cycles de vie](https://fr.vuejs.org/images/lifecycle.png)
+[Les cycles de vie](https://fr.vuejs.org/images/lifecycle.png)
+
+## Les directives
+
+Les directives sont des attributs html propre à VueJS
+
+* v-text
+* v-html
+* v-show
+* v-if
+* v-else
+* v-else-if
+* v-for
+* v-on
+* v-bind
+* v-model
+* v-pre
+* v-cloak
+* v-once
