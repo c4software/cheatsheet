@@ -1,9 +1,9 @@
-# VueJS 2.2
+# Aide mémoire VueJS 2
 
 [Débuter en Français](https://fr.vuejs.org/v2/guide/index.html)
 
 
-## VueCLI
+## VueCLI (Recommandé pour les débutants)
 
 Installation
 
@@ -14,6 +14,32 @@ $ npm install -g vue-cli
 Créer un projet «application » depuis le template officiel
 ```
 $ vue init webpack my-project
+```
+
+## Utilisation en mode « standalone »
+
+Ajout de VueJS dans un projet classique, usage en mode « déclaratif »
+
+Ajouter la librairie
+```
+<script src="https://unpkg.com/vue"></script>
+```
+
+Exemple de HTML existant dans la page :
+```
+<div id="monMessage">
+  <h1>{{ titre }}<h1>
+</div>
+```
+
+Code Javascript à ajouter :
+```
+var app = new Vue({
+  el: '#monMessage',
+  data: {
+    message: 'Bonjour Monde'
+  }
+})
 ```
 
 ## Cycle de vie
