@@ -42,6 +42,14 @@ var app = new Vue({
 })
 ```
 
+## Les événements
+
+* v-on:click.stop (stop la propagation du click)
+* v-on:click.prevent (Exemple : v-on:submit.prevent="onSubmit")
+* v-on:click.capture (Évenement interne, appelé avant)
+* v-on:click.self (Événement uniquement si lui même)
+* v-on:click.once (Événement déclenché une seule fois)
+
 ## Cycle de vie
 
 * beforeCreate
