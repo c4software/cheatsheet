@@ -19,3 +19,28 @@ https://download.docker.com/mac/stable/Docker.dmg
 ```
 curl -sSL https://get.docker.com/ | sh
 ```
+
+## Les images
+
+### Recherche
+
+```
+docker search nginx
+```
+
+### Récupérer une image
+
+```
+docker pull nginx
+```
+
+### Lancer un conteneur 
+
+* Démarre l’image ubuntu:latest
+* Déclare le port ```80``` du conteneur sur le port 3000 de votre machine.
+* Monte le dossier courant dans le dossier ```/data``` du conteneur
+* Note: Sur Windows vous devez remplacer ```-v ${PWD}:/data``` par ```-v "C:\Data":/data```
+
+```
+docker run --name monDocker -it -p 3000:80 -v ${PWD}:/data ubuntu:latest
+```
