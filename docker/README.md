@@ -34,7 +34,7 @@ docker search nginx
 docker pull nginx
 ```
 
-### Lancer un conteneur 
+## Lancer un conteneur 
 
 * Démarre l’image ubuntu:latest
 * Déclare le port ```80``` du conteneur sur le port 3000 de votre machine.
@@ -42,5 +42,21 @@ docker pull nginx
 * Note: Sur Windows vous devez remplacer ```-v ${PWD}:/data``` par ```-v "C:\Data":/data```
 
 ```
-docker run --name monDocker -it -p 3000:80 -v ${PWD}:/data ubuntu:latest
+docker run --name monConteneur -it -p 3000:80 -v ${PWD}:/data ubuntu:latest
 ```
+
+## Les Logs
+
+### Afficher les logs
+
+```
+docker logs monConteneur
+```
+
+### Afficher et suivre les logs
+
+```
+docker logs monConteneur -f
+```
+
+
