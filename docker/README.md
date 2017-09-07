@@ -127,3 +127,11 @@ WORKDIR /sources/
 ```
 docker build  -t exemple/yasb .
 ```
+
+## Nettoyage
+
+### Suppression des image(s), conteneur(s) non utilisé(s)
+
+```
+docker system prune
+```
