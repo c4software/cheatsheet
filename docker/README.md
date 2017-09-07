@@ -59,4 +59,71 @@ docker logs monConteneur
 docker logs monConteneur -f
 ```
 
+## Statistiques / Configuration
 
+
+### Statistique du conteuner
+
+```
+docker stats monConteneur
+```
+
+### Les processus du conteneur
+
+```
+docker top monConteneur
+```
+
+### Le(s) port(s) exposé(s)
+
+```
+docker port monConteneur
+```
+
+### Voir les changements dans le conteneur
+
+```
+docker diff monConteneur
+```
+
+
+## Les images
+
+### Liste
+
+```
+docker images
+```
+
+### Suppression
+
+```
+docker rmi nginx
+```
+
+### Créer une image depuis un conteneur
+
+```
+docker commit nginx
+```
+
+### Le Dockerfile
+
+#### Dockerfile
+```
+FROM     debian:latest
+
+RUN apt-get update && apt-get install -y wget zip python-pip git
+
+# Ajout Yasb
+RUN pip install http://github.com/c4software/YASB/archive/master.zip
+
+RUN mkdir /sources/
+WORKDIR /sources/
+```
+
+#### Build
+
+```
+docker build  -t exemple/yasb .
+```
