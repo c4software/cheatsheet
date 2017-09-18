@@ -187,6 +187,11 @@ Télécharger les modifications et les fusionner directement dans le HEAD :
 $ git remote pull <remote> <url>
 ```
 
+Fusionner les modifications de la ```master``` distante sur la branche courante :
+```
+$ git pull origin master
+```
+
 Récupérer toutes les modifications du HEAD dans le dépôt local :
 ```
 $ git pull
