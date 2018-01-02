@@ -3,136 +3,160 @@
 ### Personnaliser
 
 Définir son identité :
-```
-$ git config --global user.email "email@example.com"
-$ git config --global user.name "Valentin Brosseau"
+
+```sh
+git config --global user.email "email@example.com"
+git config --global user.name "Valentin Brosseau"
 ```
 
 Voir la configuration :
-```
+
+```sh
 git config --list
 ```
 
 ### Créer
 
 Créer un nouveau dépôt local (dans le dossier courant) :
-```
-$ git init
+
+```sh
+git init
 ```
 
 Cloner un dépot existant :
-```
-$ git clone ssh://user@domain.com/repo.git
+
+```sh
+git clone ssh://user@domain.com/repo.git
 ```
 
 Créer un fichier « .gitignore » pour OSX:
-```
-$ curl -s https://www.gitignore.io/api/osx > .gitignore
+
+```sh
+curl -s https://www.gitignore.io/api/osx > .gitignore
 ```
 
 ### Modifications locales
 
 Fichiers modifiés dans votre répertoire de travail :
-```
-$ git status
+
+```sh
+git status
 ```
 
 Modifications sur les fichiers suivis :
-```
-$ git diff
+
+```sh
+git diff
 ```
 
 Ajouter tous les changements actuels au prochain commit :
-```
-$ git add
+
+```sh
+git add
 ```
 
 Ajouter tous les changements de toute l’arborescence :
-```
-$ git add --all
+
+```sh
+git add --all
 ```
 
 Commiter tous les changements locaux des fichiers suivis :
-```
-$ git commit -a
+
+```sh
+git commit -a
 ```
 
 Commiter les modifications en attente :
-```
-$ git commit -m 'Votre message'
+
+```sh
+git commit -m 'Votre message'
 ```
 
 Modifier le commit précédent :
-```
-$ git commit --amend
+
+```sh
+git commit --amend
 ```
 
 ### Historique de Commit
 
 Afficher tous les commits :
-```
-$ git log
+
+```sh
+git log
 ```
 
 Afficher tous les commits (uniquement l’identifiant et le texte) :
-```
-$ git log --oneline
+
+```sh
+git log --oneline
 ```
 
 Afficher l’historique d’un utilisateur uniquement :
-```
-$ git log --author="utilisateur"
+
+```sh
+git log --author="utilisateur"
 ```
 
 Afficher l’historique des modifications pour un fichier uniquement :
-```
-$ git log -p <fichier>
+
+```sh
+git log -p <fichier>
 ```
 
 Affiche les changements (en détails) dans le fichier :
-```
-$ git blame <file>
+
+```sh
+git blame <file>
 ```
 
 ### Branches & Tags
 
 Lister toutes les branches :
-```
-$ git branch
+
+```sh
+git branch
 ```
 
 Changer de branche :
-```
-$ git checkout <votre-branche>
+
+```sh
+git checkout <votre-branche>
 ```
 
 Créer une nouvelle branche en se basant sur le HEAD :
-```
-$ git branch <votre-branche>
+
+```sh
+git branch <votre-branche>
 ```
 
 Créer une nouvelle branche de suivi, basée sur une branche distante :
-```
-$ git branch --track <nouvelle-branche> <branche-distante>
+
+```sh
+git branch --track <nouvelle-branche> <branche-distante>
 ```
 
 Supprimer une branche :
-```
-$ git branch -d <votre-branche>
+
+```sh
+git branch -d <votre-branche>
 ```
 
 Marquer le commit courant avec un tag :
-```
-$ git tag <non-du-tag>
+
+```sh
+git tag <non-du-tag>
 ```
 
 
 ### Merge & Rebase
 
-Fusionner la branche <votre-branche> avec la master :
-```
-$ git checkout master
-$ git merge <votre-branche>
+Fusionner la branche ```<votre-branche>``` avec la master :
+
+```sh
+git checkout master
+git merge <votre-branche>
 ```
 
 #### ⚠️ Attention ⚠️
@@ -140,107 +164,126 @@ $ git merge <votre-branche>
 Jouer avec l’historique est toujours dangereux surtout si vous travaillez à plusieurs !
 
 Mettre à jour votre branche avec le code de la master :
-```
-$ git checkout <votre-branch>
-$ git rebase master
+
+```sh
+git checkout <votre-branch>
+git rebase master
 ```
 
 Annuler un rebase en cours :
-```
-$ git rebase --abort
+
+```sh
+git rebase --abort
 ```
 
 Continuer un rebase après avoir résolu des conflits :
-```
-$ git rebase --continue
+
+```sh
+git rebase --continue
 ```
 
 ### Travailler avec un dépots distant
 
 Lister tous les dépôts distants configurés :
-```
-$ git remote -v
+
+```sh
+git remote -v
 ```
 
 Monter les informations d'un dépôt distant :
-```
-$ git remote show origin
+
+```sh
+git remote show origin
 ```
 
 Ajouter un nouveau dépôt distant, nommé &lt;remote&gt; :
-```
-$ git remote add <remote> <url>
+
+```sh
+git remote add <remote> <url>
 ```
 
 Synchroniser la branche « origin » avec la master. Et indiquer origin comme le dépôt distant par défaut.
-```
-$ git push -u origin master
+
+```sh
+git push -u origin master
 ```
 
 Télécharger toutes les modifications d'un dépôt distant nommé &lt;remote&gt;, sans les fusionner :
-```
-$ git fetch <remote>
+
+```sh
+git fetch <remote>
 ```
 
 Télécharger les modifications et les fusionner directement dans le HEAD :
-```
-$ git remote pull <remote> <url>
+
+```sh
+git remote pull <remote> <url>
 ```
 
 Fusionner les modifications de la ```master``` distante sur la branche courante :
-```
-$ git pull origin master
+
+```sh
+git pull origin master
 ```
 
 Récupérer toutes les modifications du HEAD dans le dépôt local :
-```
-$ git pull
-$ # ou
-$ git pull origin master
+
+```sh
+git pull
+# ou
+git pull origin master
 ```
 
 Publier les modifications locales sur un dépôt distant :
-```
-$ git push
-$ ou
-$ git push remote <remote> <branch>
+
+```sh
+git push
+ou
+git push remote <remote> <branch>
 ```
 
 Publier les tags :
-```
-$ git push --tags
+
+```sh
+git push --tags
 ```
 
 ### Annulation
 
 Annuler le dernier `git add` :
-```
-$ git reset HEAD
+
+```sh
+git reset HEAD
 ```
 
 Annuler les modifications locales d'un fichier spécifique :
-```
-$ git checkout HEAD <file>
+
+```sh
+git checkout HEAD <file>
 ```
 
 Annuler un commit (création d’un commit avec les modifications inverses)  :
-```
-$ git revert <commit>
+
+```sh
+git revert <commit>
 ```
 
 Placer le pointeur du HEAD sur un commit précédent.
 Conserve toutes les modifications effectuées depuis :
-```
-$ git reset <commit>
+
+```sh
+git reset <commit>
 ```
 
 ⚠️ Annuler toutes les modifications dans le répertoire de travail :
-```
-$ git reset --hard HEAD
+
+```sh
+git reset --hard HEAD
 ```
 
 ⚠️ Placer le pointeur du HEAD sur un commit précédent.
 Annule toutes les modifications effectuées depuis :
-```
-$ git reset --hard <commit>
+
+```sh
+git reset --hard <commit>
 ```
