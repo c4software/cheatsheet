@@ -29,10 +29,30 @@ Cloner un dépot existant :
 git clone ssh://user@domain.com/repo.git
 ```
 
-Créer un fichier « .gitignore » pour OSX:
+Créer un fichier « .gitignore » :
+
+```sh
+# Création du fichier
+vim .gitignore
+# …
+git add .gitignore
+git commit -m "Ajout gitignore"
+```
+
+Créer un fichier « .gitignore » en utilisant un template « Windows »:
+
+```sh
+curl -s https://www.gitignore.io/api/windows > .gitignore
+git add .gitignore
+git commit -m "Ajout gitignore"
+```
+
+Créer un fichier « .gitignore » en utilisant un template « MacOS »:
 
 ```sh
 curl -s https://www.gitignore.io/api/osx > .gitignore
+git add .gitignore
+git commit -m "Ajout gitignore"
 ```
 
 ### Modifications locales
@@ -77,6 +97,8 @@ Modifier le commit précédent :
 
 ```sh
 git commit --amend
+# ou
+git commit --am
 ```
 
 ### Historique de Commit
