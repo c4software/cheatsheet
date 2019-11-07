@@ -181,7 +181,7 @@ git checkout master
 git merge <votre-branche>
 ```
 
-#### ⚠️ Attention ⚠️
+⚠️ Attention ⚠️
 
 Jouer avec l’historique est toujours dangereux surtout si vous travaillez à plusieurs !
 
