@@ -1,8 +1,5 @@
 # Aide mémoire
 
-Aide mémoire en Français pour différents outils
+Déménagement, retrouvez l'ensemble des mes aide-mémoire [ici](https://github.com/c4software/bts-sio/tree/master/cheatsheets)
 
-* [Git](git/README.md)
-* [Cordova](cordova/README.md)
-* [VueJS](vuejs/README.md)
-* [Docker](docker/README.md)
+ou dans [mes supports de cours](https://cours.brosseau.ovh/)
